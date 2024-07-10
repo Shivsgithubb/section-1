@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <style>
+
+        *{
+            font-family: montserrat;
+        }
         .card{
-            border: 2px solid red;
+            border: 2px solid blue;
             width: 30%;
             box-shadow: 4px 4px 10px 3px hwb(0 5% 94%);
             padding: 40px;
+            background-color: aliceblue;
         }
 
         body{
@@ -18,7 +24,49 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color:burlywood;
+            background-image: url('https://wallpapercave.com/wp/m1iBkxi.jpg');
+            
+        }
 
+        .form-title{
+            text-align: center;
+            font-family: montserrat;
+
+        }
+
+        .text-input{
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            
+            
+        }
+
+        .btn{
+            display: block;
+            width: 100%;
+            background-color: aquamarine;
+            transition-duration: ;
+
+        }
+        .btn:hover{
+            background-color: antiquewhite;
+        }
+
+        .formlink{
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+            display: block;
+            
+        }
+
+        .register-link{
+
+        text-align: center;
         }
     </style>
 </head>
@@ -30,7 +78,13 @@
 
         <label for="email">email address</label>
         <input class="text-input" id="password" type="password">
+        <label for="email">password</label>
+        <input class="text-input" id="password" type="password">
+        <a href="#" class="form-link">create new account</a>
         <button class="btn">submit</button>
+        <button class="form-link">forgot password</button>
+        
+        
 
     </form>
     </div>
