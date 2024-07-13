@@ -1,0 +1,50 @@
+<html>
+<head><title>EXAMPLE OF FEEDBACK FORM</title></head>
+    <body>
+<h2>FEEDBACK FORM</h2>
+<P>please fill this form to help improve our site</P>
+<form method-"post" action="/cgi-bin/formmail">
+<input type-"hidden" name-"recipient" value-"deitel@deitel.com"> <input type-"hidden" name-"subject" value-"Feedback Form"> <input type-"hidden" name-"redirect" value-"main.htm!">
+<p><b>Name:</b>
+<input type-"text" name-"Name" size-"25"></p>
+<p><b>Comments:</b>
+‹textarea name-"comments" rows-"4" cols="36"></textarea></p>
+<p><b>Things you liked:</b></p>
+Site Design
+<input type="checkbox" name-"thing" value="design">
+Links
+<input type="checkbox" name-"thing" value="links">
+Ease Of Use
+<input type="checkbox" name="thing" value="Ease" >
+Images
+<input type="checkbox" name="thing" value-"lamges">
+Source Code
+<input type-"checkbox" name="thing" value="Code">
+</p>
+<p><b>How did you got to our site?: </b><br>
+Search Engine:
+<input type="radio" name="Getting Site" value="Search Engine" checked>
+Links from other site 
+<input type="radio" name="Getting Site" value="Link">
+Reference in a Book
+<input type="radio" name="Getting Site" value="Book">
+</p>
+<p><b>Rate our Site(1-10):-</b>
+    <Select name-"Rating">
+   <option>10</option>
+   <option>9</option>
+   <option>8</option>
+   <option>7</option>
+   <option>6</option>
+   <option>5</option>
+   <option>4</option>
+   <option>3</option>
+   <option>2</option>
+   <option>1</option>
+    </Select>
+</p>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+</form>
+</body>
+</html>
