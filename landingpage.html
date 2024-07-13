@@ -29,13 +29,13 @@
             font-size: 20px;
         }
 
-        .feature-section{
+        .feature-section {
             /* border: 2px solid orange; */
             width: 80%;
-            margin:30px auto;
+            margin: 30px auto;
         }
 
-        .card{
+        .card {
             /* border: 2px solid red; */
             text-align: center;
             width: 20%;
@@ -45,17 +45,82 @@
             transition-duration: 300ms;
         }
 
-        .card:hover{
+        .card:hover {
             background-color: aqua;
             color: rgb(9, 20, 226);
         }
-        .card-container{
+
+        .card-container {
 
             display: flex;
             flex-direction: row;
             gap: 40px;
             justify-content: space-around;
             align-items: center;
+        }
+
+        .service-section {
+
+            width: 80%;
+            margin: 50px auto;
+
+            /* border: 2px solid blue; */
+        }
+
+        .service-image {
+            /* border: 2px solid purple; */
+        }
+
+        .service-image img {
+            width: 100%;
+        }
+
+        .row {
+
+            display: grid;
+            grid-template-columns: 4fr 4fr;
+        }
+
+        .service-info {
+            /* border: 2px solid green; */
+            padding: 20px;
+        }
+
+        .service-title {
+            font-size: 40px;
+        }
+
+        .service-feature {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-feature,
+        li {
+            font-size: 15px;
+            margin: 40px 0;
+
+        }
+
+        footer {
+            background-color: aqua;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 5fr 2fr 2fr;
+        }
+
+        .footer h3 {
+            margin: 0;
+        }
+
+        .main-links a,
+        .page-links a,
+        .social-links a {
+            color: black;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -110,7 +175,39 @@
 
                     </div>
                 </div>
-                
+
+                <section class="service-section">
+                    <div class="row">
+                        <div class="service-image"><img src="undraw_undraw_posts_givd_(1)_5vi7.png" width=""></div>
+                        <div class="service-info">
+                            <h2>service title</h2>
+                            <ul class="service-feature">
+                                <li><i class="fa-regular fa-circle-check">service feature 1</i></li>
+                                <li><i class="fa-regular fa-circle-check">service feature 2</i></li>
+                                <li><i class="fa-regular fa-circle-check">service feature 3</i></li>
+                                <li><i class="fa-regular fa-circle-check">service feature 4</i></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="service-image"><img src="undraw_undraw_posts_givd_(1)_5vi7.png" width=""></div>
+                        <div class="service-info">
+                            <h3>service title</h3>
+                            <ul class="service-feature">
+                                <li><i class="fa-regular fa-circle-check">service feature 1</i></li>
+                                <li><i class="fa-regular fa-circle-check">service feature 2</i></li>
+                                <li><i class="fa-regular fa-circle-check">service feature 3</i></li>
+                                <li><i class="fa-regular fa-circle-check">service feature 4</i></li>
+    
+                            </ul>
+                        </div>
+
+                       
+                    </div>
+                    </div>
+                </section>
             </section>
 
         </article>
@@ -118,8 +215,34 @@
     </main>
 
     <footer>
+        <div class="main-links">
+            <h3>company name</h3>
+            <p>&copy;2024, all right reserved</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae adipisci dicta saepe unde
+                voluptate ullam, praesentium magni est libero ipsa voluptatem nihil debitis! Aliquam ex quaerat illum
+                quae sequi?</p>
+        </div>
+        <div class="page-links">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+            <a href="#">link 4</a>
+        </div>
+        <div class="social-links">
+            <a href="#">
+                <i class="fa-brand fa-facebook">facebook</i>
+            </a>
+            <a href="#">
+                <i class="fa-brand fa-instagram">instagram</i>
+            </a>
+            <a href="#">
+                <i class="fa-brand fa-linkedin">linkedin</i>
+            </a>
+            <a href="#">
+                <i class="fa-brand fa-github">github</i>
+            </a>
 
-
+        </div>
     </footer>
 </body>
 
